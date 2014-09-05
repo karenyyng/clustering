@@ -1,7 +1,7 @@
-# Robust clustering / kernel density estimation / visualization tools 
+#Robust clustering / kernel density estimation / visualization tools for astronomers  
 
 Author: [Karen Ng](mailto:karenyng@ucdavis.edu)   
-Institution: UC Davis
+Institution: Dept. of Physics, UC Davis
 
 ## Goals
 Astronomy data usually show clustering on some scale due to gravity. This
@@ -15,8 +15,13 @@ We want to come up with a clustering method of galaxies / stars to best
 * validate our method or show it is consistent with estimates with
 other statistical methods 
 
-I work from with very specific goals in mind but I imagine other astronomy
+I work from with very specific
+[goals](http://github.com/karenyyng/clustering/tree/master/notes/project_specifics.md) in mind but I imagine other astronomy
 / astrophysics people may have similar needs for pre-processing their data
 for inference. 
 
-## Files
+## Files / folders 
+* ipynb - all the notebooks for data exploration or calling functions 
+* notes - some reference / background of the project 
+
+
