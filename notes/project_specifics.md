@@ -15,7 +15,11 @@ well-known statistical methods
 ## Motivation 
 Accurate representation of spatial distribution of galaxies in a merging
 cluster is important in a sense that any noteworthy offset of galaxies / gas from
-the dark matter component could be a sign of self-interacting dark matter
+the dark matter component could be a sign of self-interacting dark matter.
+Since astrophysicists know so little about dark matter, any further
+concrete constraint on the dark matter self-interaction cross section will
+help theoretical physicists rule out unlikely dark matter
+candidates.
 (think: Bullet Cluster)  
 
 ## Description of my data  
@@ -34,10 +38,10 @@ simulations to validate our method
 
 # Action plan
 ## Questions that need to be addressed 
-* whether we have enough data for clustering and testing hypothesis 
+* whether we have enough data for clustering and testing hypotheses 
 * determine the number of subcluster(s) or put unwanted (foreground /
 background) data in their own subclusters  
-* assign membership with some confidence / credible estimates? 
+* assign membership of data points with some confidence / credible estimates  
 * weight our data points to represent the underlying
 physical properties / uncertainties 
 * find best way(s) to represent the spatial distributions of each set of
@@ -53,11 +57,6 @@ for details, see notes/data_preprocessing.md
 
 ### proposed  methods for visualizing the structure of the data  
 
-#### proposed method 1  
-* bootstrap the galaxies
-* histogram each set of the bootstrapped data 
-* smooth the map of data points with Gaussian filter 
-* identify peaks 
 
 ### kernel density estimation (KDE)
 * bootstrap the galaxies
@@ -75,3 +74,13 @@ within each subcluster to be higher than 3 or so
 ### Preliminary analyses 
 * unweighted 2D KDE using statsmodel and visualization using seaborn
 * Gaussian Mixture Model 
+
+### future plan 
+* I am fixing XDGMM so that it could "predict" which the most likely
+Gaussian mixture that a data point should belong to  
+
+#### proposed method 1  
+* bootstrap the galaxies
+* histogram each set of the bootstrapped data 
+* smooth the map of data points with Gaussian filter 
+* identify peaks 
